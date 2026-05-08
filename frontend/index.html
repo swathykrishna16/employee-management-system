@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Employee Management System</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Employee Management System</h1>
+<input type="number" id="searchId" placeholder="Enter Employee ID">
+
+<button onclick="fetchEmployeeById()">
+Fetch Employee By ID
+</button>
+
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="email" placeholder="Email">
+<input type="text" id="department" placeholder="Department">
+<input type="number" id="salary" placeholder="Salary">
+
+<button onclick="addEmployee()">Add Employee</button>
+<button onclick="updateEmployee()">Update Employee</button>
+
+
+<table border="1">
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Email</th>
+<th>Department</th>
+<th>Salary</th>
+<th>Action</th>
+</tr>
+
+</thead>
+
+<tbody id="employeeTable"></tbody>
+
+</table>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
